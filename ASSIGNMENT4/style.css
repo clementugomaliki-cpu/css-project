@@ -1,0 +1,228 @@
+:root {
+    --background: #223352;
+    --third: #bec489;
+    --fourth: #fff;
+    --font1: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    --font2: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    --fontsize: 1.2rem;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: auto;
+    background-color: var(--background);
+    font-size: 62.5%;
+    }
+.header {
+    background-color: var(--fourth);
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    width: 100%;
+    padding: 0px, 10px;
+    }
+.logo {
+    height: 40%;
+    width: 20%;
+    margin-left: 30px;
+}
+.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+}
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    gap: 20px;
+    font-size: var(--fontsize);
+}
+h1 {
+    color: var(--background);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5rem;
+    margin-left: 30px;
+}
+/*a {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }*/
+.grids {
+    height: auto;
+    background-color:var(--fourth);
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+
+}
+img {
+    height: 240px;
+    width: 100%;
+    border-radius: 8%;
+}
+.footer {
+    background-color: var(--third);
+    height: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+p {
+    color: var(--background);
+    font-family: var(--font2);
+    font-size: var(--fontsize);
+    display: flex;
+    justify-content: center;
+}
+.p-bigger {
+    font-size: var(--fontsize);
+    color: var(--fourth);
+}
+button {
+    height: 20%;
+    width: 30%;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    background-color: var(--background);
+    font-size: var(--fontsize);
+    font-family: var(--font1)
+}
+.address {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+}
+button:hover {
+    background-color: #4b5569;  
+    cursor: pointer;
+}
+@media (max-width: 480px) {
+    body {
+        height: auto;
+        width: 100%;
+        margin: 10px;
+        box-sizing: border-box;
+        display: grid;
+        grid-template-columns: span 1;
+    }
+    .header  {
+        height: auto;
+        width: 100%;
+        display: grid;
+        grid-template-columns: span 1;
+    }
+    .grids {
+        height: auto;
+        width: 100%;
+        display: grid;
+        grid-template-columns: span 1;
+    }
+    .address {
+        height: auto;
+        width: 100%;
+        display: grid;
+        grid-template-columns: span 1;
+        font-size: 1rem;
+           }
+    .footer {
+        height: auto;
+        width: 100%;
+        display: grid;
+        grid-template-columns: span 1;
+           }
+    button {
+        height: auto;
+        width: 100%;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    body {
+        height: auto;
+        width: 100%;
+        margin: 10px;
+        box-sizing: border-box;
+        display: grid;
+        grid-template-columns: span 2;
+    }
+    .header  {
+        height: auto;
+        width: 100%;
+        display: grid;
+        grid-template-columns: span 2;
+    }
+    .grids {
+        height: auto;
+        width: 100%;
+        display: grid;
+        grid-template-columns: span 2;
+    }
+    .address {
+        height: auto;
+        width: 100%;
+        display: grid;
+        grid-template-columns: span 2;
+        font-size: 1rem;
+           }
+    .footer {
+        height: auto;
+        width: 100%;
+        display: grid;
+        grid-template-columns: span 2;
+           }
+    button {
+        height: auto;
+        width: 100%;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    body {
+        height: auto;
+        width: 100%;
+        margin: 10px;
+        box-sizing: border-box;
+        display: grid;
+        grid-template-columns: span 2;
+    }
+    .header  {
+        height: auto;
+        width: 100%;
+        display: grid;
+        grid-template-columns: span 2;
+    }
+    .grids {
+        height: auto;
+        width: 100%;
+        display: grid;
+        grid-template-columns: span 2;
+    }
+    .address {
+        height: auto;
+        width: 100%;
+        display: grid;
+        grid-template-columns: span 2;
+        font-size: 1rem;
+           }
+    .footer {
+        height: auto;
+        width: 100%;
+        display: grid;
+        grid-template-columns: span 2;
+           }
+    button {
+        height: auto;
+        width: 100%;
+    }
+}
