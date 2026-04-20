@@ -357,7 +357,12 @@ ul {
             margin-left: 10px;
             font-size: 1rem;
             font-weight: bold;
+            animation: subscribe-btn 5s ease-in-out infinite;
+            
+        }
+        .subscribe-btn:hover {
             animation: subscribe 1s ease-in-out infinite;
+            cursor: pointer;
         }
         .footer {
             background-color: black;
@@ -423,5 +428,21 @@ color: white;
         }
         100% {
             transform: translateX(-8px);
+        }
+    }
+    @keyframes subscribe-btn {
+        0% {
+            background-color: blue;
+            transition: all 0.8s ease-in;
+        }
+        50% {
+            transform: translateX(10px);
+            transform: scale(1.1);
+            transition: all 0.8s ease-in;
+        }
+        100% {
+            transform: translateX(-10px);
+            transform: scale(1);
+            transition: all 0.8s ease-in;
         }
     }
