@@ -37,6 +37,7 @@ searchInput.addEventListener('input', (event) => {
     }
 });
 
+renderStudents(students);
 
 const body = document.body.style;
 body.backgroundColor = 'crimson';
